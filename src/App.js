@@ -1,7 +1,14 @@
-import React from "react";
+import React from 'react';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { CssBaseline } from '@material-ui/core';
+import theme from './theme';
 
 function App() {
-  return <div className="App"></div>;
+	return (
+		<ThemeProvider theme={theme}>
+			<CssBaseline />
+		</ThemeProvider>
+	);
 }
 
 export default App;
