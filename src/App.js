@@ -5,12 +5,12 @@ import theme from './theme';
 import MainLayout from './layouts/MainLayout';
 
 function App() {
-	return (
-		<ThemeProvider theme={theme}>
-			<CssBaseline />
-			<MainLayout />
-		</ThemeProvider>
-	);
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <MainLayout />
+    </ThemeProvider>
+  );
 }
 
 export default App;
