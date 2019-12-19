@@ -1,6 +1,7 @@
 import { helper } from './base'
 
-export const createTodo = async() => {
+export default async function createTodo() {
   const url = '/api/todos'
-  return await helper.postJsonData(url)
+  const response = await helper.postJsonData(url)
+  return response
 }
